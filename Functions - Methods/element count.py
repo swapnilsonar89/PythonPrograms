@@ -7,9 +7,9 @@ def noCount(nums):
         for j in range(len(nums)):
             if nums[i] == nums[j]:
                 count+=1
-            elif j == (len(nums)-1):
-                   c[nums[i]]=count
-                   count=0
+        c[nums[i]]=count
+        count=0
+                   
     return c
         
                 
