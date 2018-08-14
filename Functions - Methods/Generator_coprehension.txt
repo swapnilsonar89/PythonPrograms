@@ -1,0 +1,4 @@
+generator expression is like a list comprehension, but instead of finding all the items you're interested and packing them into list, it waits, and yields each item out of the expression, one by one.
+
+filtered_gen = (item for item in my_list if item > 3) in list comprehension we us '[]' and in generator we use '()'
+filtered_list = [item for item in my_list if item > 3]
