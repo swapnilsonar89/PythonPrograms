@@ -1,18 +1,14 @@
-class Solution:
-    def removeDuplicates(self, nums):
+def removeDuplicates(nums):
         l = len(nums)
         i = 0
-        while i < l:
-            if nums.count(nums[i])>1:
-                j = i + 1
-                while j < l:
-                    if nums[i] == nums[j]:
-                        del nums[j]
-                        l-=1
-                        j-=1
-                    j+=1
+        while i < l-1:
+            if nums[i] == nums[i+1]:
+                del nums[i]
+                l-=1
+                i-=1
             i+=1
-                    
+                
+                
+        print(nums)            
                     
         return len(nums)
-       
