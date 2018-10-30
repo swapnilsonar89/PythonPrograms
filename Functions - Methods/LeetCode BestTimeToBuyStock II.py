@@ -7,3 +7,13 @@ class Solution:
                 total+=(prices[i+1]-prices[i])
         return total
         
+    #### Only 1 transaction
+    def maxProfit(prices):
+        min_price = float('inf')
+        total = 0
+    
+        for i in prices:
+            min_price = min(i,min_price)
+            profit = i - min_price
+            total = max(total,profit)
+        return total
